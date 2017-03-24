@@ -1,0 +1,51 @@
+{
+  "name": "relayql-azure",
+  "version": "1.0.0",
+  "description": "An example client and server using React, GraphQL, and Relay",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node --presets react,es2015,stage-0 server.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Enso Armand <aarmand.inbox@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idkjs/relayql-azure/issues"
+  },
+  "homepage": "https://github.com/idkjs/relayql-azure#readme",
+  "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-relay-plugin": "^0.11.0",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-graphql": "^0.7.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-node": "^4.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "events": "^1.1.1",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.3",
+    "flux": "^3.1.2",
+    "graphql": "^0.9.1",
+    "graphql-relay": "^0.5.1",
+    "jquery": "^3.2.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.0",
+    "mongodb": "^2.2.25",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-relay": "^0.10.0",
+    "relay-mongodb-connection": "^2.1.0",
+    "webpack": "^2.2.1"
+  }
+}
