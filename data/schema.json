@@ -99,6 +99,11 @@
               "kind": "OBJECT",
               "name": "Store",
               "ofType": null
+            },
+            {
+              "kind": "OBJECT",
+              "name": "Business",
+              "ofType": null
             }
           ]
         },
@@ -384,7 +389,7 @@
           "fields": [
             {
               "name": "id",
-              "description": null,
+              "description": "The ID of an object",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -460,7 +465,13 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [],
+          "interfaces": [
+            {
+              "kind": "INTERFACE",
+              "name": "Node",
+              "ofType": null
+            }
+          ],
           "enumValues": null,
           "possibleTypes": null
         },

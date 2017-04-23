@@ -31,14 +31,16 @@ let Schema = db => {
       let { type } = fromGlobalId(globalId)
       if (type === 'Store') {
         return store
+      } else {
+        return null
       }
-      return null
     },
     (obj) => {
       if (obj instanceof Store) {
-        return storeType 
+        return storeType
+      } else {
+        return null
       }
-      return null
     }
   )
 
@@ -74,11 +76,9 @@ let Schema = db => {
 
   let businessType = new GraphQLObjectType({
     name: 'Business',
+    interfaces: [nodeDefs.nodeInterface],
     fields: () => ({
-      id: {
-        type: new GraphQLNonNull(GraphQLID),
-        resolve: (obj) => obj._id
-      },
+      id: globalIdField('Business', (obj) => obj._id),
       name: { type: GraphQLString },
       url: { type: GraphQLString },
       state: { type: GraphQLString },
